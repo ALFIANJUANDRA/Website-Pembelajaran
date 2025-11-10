@@ -1,0 +1,454 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* TOP BAR */
+.top-bar {
+  background: #111;
+  color: #ff9800;
+  padding: 6px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* HEADER */
+header {
+  background: #1c1c1c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #ff9800;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ff9800;
+}
+
+.logo p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* HERO SECTION */
+.hero {
+ background: url("images/1.webp") center/cover no-repeat;
+  height: 70vh;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 80px;
+  color: white;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffb74d;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff9800;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* CONTENT SECTION */
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background: #1a1a1a;
+  color: white;
+}
+
+.news, .events {
+  width: 48%;
+}
+
+.news h3, .events h3 {
+  color: #ff9800;
+  margin-bottom: 20px;
+  font-size: 22px;
+  border-bottom: 2px solid #ffb74d;
+  display: inline-block;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 20px;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.news-item img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.news-item div {
+  padding: 10px;
+}
+
+.events .event-item {
+  display: flex;
+  margin-bottom: 15px;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.date-box {
+  background: #ff9800;
+  color: white;
+  width: 70px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+}
+
+.date-box .day {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date-box .month {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.event-info {
+  padding: 10px;
+}
+
+/* JOIN SECTION */
+.join {
+  background: #ff9800;
+  color: black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.join h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.join p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-dark {
+  background: #111;
+  color: #ff9800;
+}
+
+.btn-dark:hover {
+  background: #333;
+}
+
+/* FOOTER */
+footer {
+  background: #0d0d0d;
+  color: #ffb74d;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+/* PAGE LAYOUT */
+.page {
+  background: #1a1a1a;
+  color: rgb(255, 255, 255);
+  padding: 60px 80px;
+  min-height: 70vh;
+}
+
+.page h2 {
+  color: #ff9800;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffb74d;
+  display: inline-block;
+}
+
+.page ul {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.page form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.page input, .page textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+}
+
+.page button {
+  width: 150px;
+  align-self: flex-start;
+}
+/* === HERO SECTION === */
+.hero-courses {
+  position: relative;
+  background: url("images/matematika.jpg") center/cover no-repeat;
+  border-bottom: 3px solid #ff6600;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+/* Tambahkan overlay gelap */
+.hero-courses::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* 0.6 = tingkat kegelapan overlay */
+  z-index: 1;
+}
+
+/* Pastikan teks berada di atas overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero-courses h2 {
+  color: #ff6600;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero-courses p {
+  color: #ddd;
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* === COURSE SECTION === */
+.pdf-item {
+  position: relative;
+  background: url("images/matematika\ 2.jpg") center/cover no-repeat;
+  border: 1px solid #ff6600;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Overlay gelap */
+.pdf-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* ubah angka 0.6 -> lebih tinggi = lebih gelap */
+  z-index: 1;
+}
+
+/* Pastikan teks tampil di atas overlay */
+.pdf-item h4,
+.pdf-item p,
+.pdf-item .btn {
+  position: relative;
+  z-index: 2;
+}
+
+
+.course-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 15px rgba(255, 102, 0, 0.4);
+}
+
+.course-header h3 {
+  color: #ff6600;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.course-header p {
+  color: #ccc;
+}
+
+.pdf-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.pdf-item {
+  background-color: #111;
+  border: 1px solid #ff6600;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.pdf-item:hover {
+  background-color: #222;
+  box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+}
+.pdf-item h4 {
+  color: #ff6600;
+  margin-bottom: 8px;
+}
+.pdf-item p {
+  color: #ccc;
+  font-size: 0.95em;
+  margin-bottom: 12px;
+}
+.pdf-item .btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pdf-item .btn:hover {
+  background-color: #e65c00;
+}
+/* ==== HERO BAGIAN ANGGOTA ==== */
+.hero-contact {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+              url("img/team-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-contact h2 {
+  font-size: 2.5em;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.hero-contact p {
+  color: #ddd;
+  font-size: 1.1em;
+}
+
+/* ==== KARTU ANGGOTA ==== */
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background-color: #1a1a1a;
+  border: 1px solid #ff6600;
+  border-radius: 15px;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.6);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ff6600;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+}
+
+.team-card h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.team-card p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.wa-link {
+  color: #25d366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wa-link:hover {
+  text-decoration: underline;
+}
